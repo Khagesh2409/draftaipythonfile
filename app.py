@@ -18,7 +18,7 @@ def modelfunc(temp_text, case_text, option):
 	}
 	
 	
-	templatetext = switchtemplate.get(option, "You are a lawyer. This is a templte.\n\n") + temp_text
+	templatetext = switchtemplate.get(option, "You are a lawyer. This is a template.\n\n") + temp_text
 	casenotes = switchcase.get(option, "These are the case notes. I want you to use these case notes to fill the given template with necessary data like user information extracted from these case notes.\n\n") + case_text
 
 	response = client.chat.completions.create(
